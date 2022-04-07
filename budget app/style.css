@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    min-height: 50vh;
+    background: url('assets/img/img-3.jpg');
+}
+
+.income {
+    max-width: 45% !important;
+    padding: 10px;
+}
+
+.expenses {
+    max-width: 45% !important;
+    padding: 10px; 
+}
+
+.expenses-percentage {
+    background: rgb(153, 39, 39);
+    font-size: 12px;
+    padding: 6px;
+    color: #fff !important;
+    display: inline !important;
+}
+
+.bg-secondary.add-section {
+    background: lightgray !important;
+}
+
+.expenses-list-item:nth-child(odd) {
+    background: rgba(189, 178, 178, 0.678);
+}
+
+
+.income-list-item:nth-child(odd) {
+    background: rgba(189, 178, 178, 0.678);
+}
+
+.list-row {
+    border-bottom: 4px solid lightgrey;
+}
+
+.close {
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.income-list-item:hover .close {
+    display: inline-flex;
+}
+
+.expenses-list-item:hover .close {
+    display: inline-flex;
+}
+
+
+.add-select:focus {
+    border: 2px solid cyan !important;
+}
+
+.add-select:focus-within {
+    border: none;
+}
+
+.add-description:focus {
+    border: 2px solid cyan !important;
+}
+
+.add-description:focus-within {
+    border: none;
+}
+
+.add-value:focus {
+    border: 2px solid cyan !important;
+}
+
+
+.red {
+    color: rgb(156, 4, 4) !important;
+}
+
+.red-focus:focus {
+    border: 2px solid rgb(156, 4, 4) !important;
+}

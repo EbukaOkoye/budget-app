@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="assets/fontawesome-free-5.15.4-web/css/all.min.css">
+
+    <title>Budget App</title>
+</head>
+<body>
+    
+    <div class="container-fluid banner">
+
+        <div class="container p-2 banner-title">
+            <div class="container display-6 text-white text-center">Available Budget in <span class="month-title display-6 text-white">%Month%</span></div>
+        </div>
+
+        <div class="container p-2 banner-budget">
+            <div class="container p-3 budget-value text-white display-4 text-center">+1,639.67</div>
+        </div>
+
+        <div class="container p-2 banner-income">
+            <div class="income container bg-success d-md-flex justify-content-between"> <h5 class="income-text text-dark fw-bold">Income</h5> <h5 class="income-value text-white">+ 4,300.00</h5></div>
+        </div>
+
+        <div class="container p-2 banner-expenses">
+            <div class="expenses container bg-danger d-md-flex justify-content-between"> 
+                <h5 class="expenses-text text-dark fw-bold">Expenses</h5> 
+                
+                <div class="wrapper d-md-flex">
+
+                    <h5 class="expenses-value text-white mx-1">- 1,954.00 </h5>
+
+                    <span class="expenses-percentage text-white mx-1">53%</span>
+
+                </div>
+                
+            
+            </div>
+        </div>
+
+    </div>
+
+    <div class="conatiner-fluid bg-secondary add-section">
+        
+        <div class="container-md add">
+
+            <div class="row p-3">
+
+                <div class="col-md-3 p-1">
+
+                    <select class="form-select-sm add-select" aria-label="Default select example">
+                        <option value="inc" class="increment" selected>+</option>
+                        <option value="exp" class="decrement">-</option>
+                    </select>
+
+                </div>
+
+                <div class="col-md-3 p-1">
+
+                    <input type="text" class="form-control add-description" id="exampleInputText1" aria-describedby="textHelp" placeholder="Add Description">
+
+                </div>
+
+
+                <div class="col-md-3 p-1">
+
+                    <input type="number" class="form-control add-value" id="exampleInputText2" aria-describedby="textHelp" placeholder="Value">
+
+                </div>
+
+                <div class="col-md-3 p-1">
+
+                    <button class="btn add-button fs-4 text-success fw-bold">&checkmark;</button>
+
+                </div>
+                
+            </div>
+
+            
+
+        </div>
+
+    </div>
+
+    <div class="container-md list p-4">
+
+        <div class="row list-row px-5">
+
+            <div class="col-md-6 income-list p-3">
+
+                <h4 class="display-6 fw-bold income-list-title text-success">Income</h4>
+                 
+
+                <!-- <div class="income-list-item d-md-flex justify-content-between p-1" id="income-0">
+
+                    <h5 class="income-item-description">Website project</h5>
+
+                    <h5 class="text-success income-item-value">+ $23,000 <span class="text-danger px-1 fs-5 close">&times;</span></h5>
+
+                </div> -->
+
+                <!-- <div class="income-list-item d-md-flex justify-content-between p-1" id="income-1">
+
+                    <h5 class="income-item-description">Remote Job</h5>
+
+                    <h5 class="text-success income-item-value">+ $63,000 </h5><span class="text-danger px-1 fs-5 close">&times;</span>
+
+                </div> -->
+
+            </div>
+
+            <div class="col-md-6 expenses-list p-3">
+
+                <h4 class="display-6 fw-bold expenses-list-title text-danger">Expenses</h4>
+
+                <!-- <div class="expenses-list-item d-md-flex justify-content-between p-1" id="expenses-0">
+
+                    <h5 class="expenses-item-description">Laptop</h5>
+
+                    <h5 class="text-danger expenses-item-value">+ $3,000 <span class="expenses-percent text-danger p-1">- 33%</span> </h5><span class="text-danger px-1 fs-5 close">&times;</span>
+
+                </div>
+
+                <div class="expenses-list-item d-md-flex justify-content-between p-1" id="expenses-1">
+
+                    <h5 class="expenses-item-description">Rent</h5>
+
+                    <h5 class="text-danger expenses-item-value">+ $23,000 <span class="expenses-percent text-danger p-1">- 53%</span></h5><span class="text-danger px-1 fs-5 close">&times;</span>
+
+                </div> -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+</body>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</html>
